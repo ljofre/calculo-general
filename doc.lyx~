@@ -77,8 +77,12 @@ theorems-ams-extended
 Ejercicios resueltos de cálculo
 \end_layout
 
+\begin_layout Author
+Leonardo Andrés Jofré Flor
+\end_layout
+
 \begin_layout Section
-Integral doble sobre un rectángulo
+Integral doble sobre un rectángulos
 \end_layout
 
 \begin_layout Standard
@@ -314,7 +318,7 @@ Evalue
 \begin_layout Problem
 \begin_inset Formula 
 \[
-\int_{0}^{\pi}\int_{1}^{2}\left(3r\cos\left(\theta\right)+4r^{2}\sin^{2}\theta\right)rdrd\theta
+\int_{0}^{\pi}\int_{1}^{2}\left(3r\cos\left(\theta\right)+4r^{2}\sin^{2}\theta\right)rdrd\theta=\frac{15\pi}{2}
 \]
 
 \end_inset
@@ -326,11 +330,310 @@ Evalue
 
 \end_layout
 
+\begin_layout Problem
+Encuentre el volumen del sólido acotado por el plano 
+\begin_inset Formula $z=0$
+\end_inset
+
+ y el paraboloide 
+\begin_inset Formula $z=1-x^{2}-y^{2}$
+\end_inset
+
+ en coordenadas rectangulares y polares
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+V=\int_{0}^{2\pi}\int_{0}^{1}\left(1-r^{2}\right)rdrd\theta=\frac{\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Use la integral doble para ahllar el área encerrada por un pétalo de la
+ rosa de cuadro hojas 
+\begin_inset Formula $r=\cos2\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+A=\int_{-\pi/4}^{\pi/4}\int_{0}^{\cos2\theta}rdrd\theta=\frac{\pi}{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Encuentre el volumen del sólido que yace debajo del paraboloide 
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+, arriba del plano 
+\begin_inset Formula $xy$
+\end_inset
+
+ y dentro del cilindro 
+\begin_inset Formula $x^{2}`+y^{2}=2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+V=\int\int_{D}x^{2}+y^{2}dA=\int_{-\pi/2}^{\pi/2}\int_{0}^{2\cos\theta}r^{2}rdrd\theta=\frac{3\pi}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section
+Integrales triples
+\end_layout
+
+\begin_layout Subsection
+coordenadas rectangulares
+\end_layout
+
+\begin_layout Problem
+Evalue la integral triple 
+\begin_inset Formula $\iiint_{B}xyz^{2}dV$
+\end_inset
+
+ donde 
+\begin_inset Formula $B$
+\end_inset
+
+ es la caja rectangular 
+\begin_inset Formula $B=\left\{ \left(x,y,z\right)/0\leq x\leq1,-1\leq y\leq2,0\leq z\leq3\right\} $
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\int\frac{3x}{x^{2}-5x+6}dx
+\int_{0}^{3}\int_{-1}^{2}\int_{0}^{1}xyzdxdydz=\frac{27}{4}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Evalue 
+\begin_inset Formula $\iiint_{E}zdV$
+\end_inset
+
+ donde 
+\begin_inset Formula $E$
+\end_inset
+
+ es el tetrahedro solido acotado por los cuatro planos 
+\begin_inset Formula $x=0,y=0,z=0,x+y+z=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{1}\int_{0}^{1-x}\int_{0}^{1-x-y}zdzdydx=\frac{1}{24}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+coordenadas cilindricas
+\end_layout
+
+\begin_layout Problem
+Describa la superficie cuya ecuación en coordenadas cilíndricas es 
+\begin_inset Formula $z=r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Un sólido 
+\begin_inset Formula $E$
+\end_inset
+
+ se encuentra dentro de un cilindro 
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+, por debajo del plano 
+\begin_inset Formula $z=4$
+\end_inset
+
+ y por encima del paraboloide 
+\begin_inset Formula $z=1-x^{2}-y^{2}$
+\end_inset
+
+.
+ La densidad en cualquier punto es proporcional a la distancia del eje del
+ cilindro.
+ Encuentre la masa de 
+\begin_inset Formula $E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m=\int_{0}^{2\pi}\int_{0}^{1}\int_{1-r^{2}}^{4}Krrdzdrd\theta=\frac{12\pi K}{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Evalue 
+\begin_inset Formula $\int_{-2}^{2}\int_{-\sqrt{4-x^{2}}}^{\sqrt{4-x^{2}}}\int_{\sqrt{x^{2}+y^{2}}}^{2}\left(x^{2}+y^{2}\right)dzdydx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Respuesta 
+\begin_inset Formula $-2\leq x\leq2,-\sqrt{4-x^{2}}\leq y\leq\sqrt{4-x^{2}},\sqrt{x^{2}+y^{2}}\leq z\leq2$
+\end_inset
+
+ que es equivalente a 
+\begin_inset Formula $0\leq\theta\leq2\pi,0\leq r\leq2,r\leq z\leq2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+coordenadas esféricas
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & \rho\sin\phi\cos\theta\\
+y & = & \rho\sin\phi\sin\theta\\
+z & = & \rho\cos\phi
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Evalúe 
+\begin_inset Formula $\iiintop_{B}e^{\left(x^{2}+y^{2}+z^{2}\right)^{3/2}}dV$
+\end_inset
+
+, donde 
+\begin_inset Formula $B$
+\end_inset
+
+ es la bola unitaria
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{\pi}\int_{0}^{2\pi}\int_{0}^{1}e^{\rho^{3}}\rho^{2}\sin\phi d\rho d\theta d\phi=\frac{4}{3}\pi\left(e-1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Use coordenadas esféricas para hallar el volumen del sólido que yace ariba
+ del cono 
+\begin_inset Formula $z=\sqrt{x^{2}+y^{2}}$
+\end_inset
+
+ y debajo de la esfera 
+\begin_inset Formula $x^{2}+y^{2}+z^{2}=z\equiv\rho=\cos\phi$
+\end_inset
+
+ la ecuación del cono se puede escribir como 
+\begin_inset Formula $\rho\cos\phi=\rho\sin\phi$
+\end_inset
+
+ que es equivalente a 
+\begin_inset Formula $\phi=\frac{\pi}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+\int_{0}^{2\pi}\int_{0}^{\pi/4}\int_{0}^{\cos\phi}\rho^{2}\sin\phi d\rho d\phi d\theta=\frac{\pi}{8}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Suma de Riemman
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\int_{0}^{1}\int_{0}^{1}\int_{0}^{1}x^{2}+y^{2}+z^{2}dxdydz & = & \lim_{m,n,r\to\infty}\left(x_{i}+y_{i}+z_{i}\right)\frac{1}{m}\cdot\frac{1}{n}\cdot\frac{1}{r}\\
+ & = & \lim_{m,n,r\to\infty}\left(\frac{i}{n}+\frac{j}{m}+\frac{k}{r}\right)\frac{1}{m}\cdot\frac{1}{n}\cdot\frac{1}{r}
+\end{eqnarray*}
 
 \end_inset
 
