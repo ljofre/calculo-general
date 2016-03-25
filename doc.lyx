@@ -81,28 +81,103 @@ Ejercicios resueltos de cálculo
 Leonardo Andrés Jofré Flor
 \end_layout
 
+\begin_layout Standard
+Cada problema requiere una pequeña explicación de lo que entendió del ejercicio
+\end_layout
+
 \begin_layout Section
 Integral doble sobre un rectángulos
 \end_layout
 
-\begin_layout Standard
-Calcular 
-\begin_inset Formula $I=\int_{0}^{1}\int_{1}^{2}\int_{2}^{3}x\cos z+3yzdxdydz$
+\begin_layout Problem
+Evalúe las siguientes integrales iteradas
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{flalign*}
+\int_{0}^{3}\int_{1}^{2}x^{2}ydydx &  & \int_{1}^{2}\int_{0}^{3}x^{2}ydydx
+\end{flalign*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Integral de Riemman en 3 variables
+\begin_layout --Separator--
+
 \end_layout
 
-\begin_layout Standard
-Coordenadas cilindricas
+\begin_layout Problem
+Evalue la integral doble 
+\begin_inset Formula $\iint_{R}\left(x-3y^{2}\right)dA$
+\end_inset
+
+ donde 
+\begin_inset Formula $R=\left\{ \left(x,y\right)/0\leq x\leq2,1\leq y\leq2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Evalúe 
+\begin_inset Formula $\iint_{R}y\sin\left(xy\right)dA$
+\end_inset
+
+, donde 
+\begin_inset Formula $R=\left[1,2\right]\times\left[0,\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Encuentre el volumen del sólido 
+\begin_inset Formula $S$
+\end_inset
+
+ acotado por el paraboloide elíptico 
+\begin_inset Formula $x^{2}+2y^{2}+z=16$
+\end_inset
+
+, los planos 
+\begin_inset Formula $x=2$
+\end_inset
+
+ y 
+\begin_inset Formula $y=2$
+\end_inset
+
+ y los tres planos coordenados.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Si 
+\begin_inset Formula $R=\left[0,\pi/2\right]\times\left[0,\pi/2\right]$
+\end_inset
+
+ , entonces 
+\begin_inset Formula $\iint_{R}\sin\left(x\right)\cos\left(y\right)dA$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Integral múltiple sobre dominios más generales
+Integral múltiple sobre regiones generales
 \end_layout
 
 \begin_layout Problem
@@ -642,6 +717,16 @@ Aproximación de un volumen mediante suma de rectángulos
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Cálculo en varias variables, Stewart 7 edición.
 \end_layout
 
 \end_body
