@@ -78,11 +78,95 @@ Ejercicios resueltos de cálculo
 \end_layout
 
 \begin_layout Author
-Leonardo Andrés Jofré Flor
+Leonardo Andrés Jofré Flor, Academia Politécnica Militar
 \end_layout
 
 \begin_layout Standard
 Cada problema requiere una pequeña explicación de lo que entendió del ejercicio
+\end_layout
+
+\begin_layout Section
+Derivadas direccionales
+\end_layout
+
+\begin_layout Standard
+Una derivada direccional es 
+\begin_inset Formula 
+\[
+D_{\mathbf{u}}f=\lim_{h\to0}\frac{f\left(\mathbf{x}+h\mathbf{u}\right)-f\left(\mathbf{x}\right)}{h}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y su interpretación es la de la pendiente de la recta tangente a 
+\begin_inset Formula $f$
+\end_inset
+
+ con respecto un corte vertical definido por el plano que contiene a la
+ recta que pasa en el punto 
+\begin_inset Formula $\left(\mathbf{x},f\left(\mathbf{x}\right)\right)$
+\end_inset
+
+ y que tiene dirección 
+\begin_inset Formula $\mathbf{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Su cálculo se puede simplificar mediante 
+\begin_inset Formula 
+\[
+D_{\mathbf{u}}f=\nabla f\cdot\mathbf{u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Determine la derivada direccional 
+\begin_inset Formula $D_{\mathbf{u}}f$
+\end_inset
+
+ si 
+\begin_inset Formula $f\left(x,y\right)=x^{3}-3xy+4y^{2}$
+\end_inset
+
+ y 
+\begin_inset Formula $u$
+\end_inset
+
+ es el vector unitario dado por 
+\begin_inset Formula $\theta=\frac{\pi}{6}$
+\end_inset
+
+ ¿Qué valor tiene 
+\begin_inset Formula $D_{\mathbf{u}}f\left(1,2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+hint:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(3x^{2}-3y,6y,-3x\right)\cdot\mathbf{u}$
+\end_inset
+
+ donde 
+\begin_inset Formula $\mathbf{u}=\left(\cos\left(\frac{\pi}{6}\right),\sin\left(\frac{\pi}{6}\right)\right)$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -466,7 +550,7 @@ Encuentre el volumen del sólido que yace debajo del paraboloide
 \end_inset
 
  y dentro del cilindro 
-\begin_inset Formula $x^{2}`+y^{2}=2x$
+\begin_inset Formula $x^{2}+y^{2}=2x$
 \end_inset
 
 
@@ -551,6 +635,37 @@ Evalue
 
 \begin_layout Subsection
 coordenadas cilindricas
+\end_layout
+
+\begin_layout Summary
+Para las coordenadas cilíndricas el cambio de variable requerido es
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & r\cos\theta\\
+y & = & r\sin\theta\\
+z & = & z
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Summary
+lo que nos lleva a que 
+\begin_inset Formula 
+\begin{eqnarray*}
+r & = & x^{2}+y^{2}\\
+\theta & = & \tan^{-1}\left(\frac{y}{x}\right)
+\end{eqnarray*}
+
+\end_inset
+
+el jacobiano es 
+\begin_inset Formula $J=r$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Problem
@@ -717,6 +832,16 @@ Aproximación de un volumen mediante suma de rectángulos
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Cálculo en varias variables, Stewart 7 edición.
 \end_layout
 
 \end_body
